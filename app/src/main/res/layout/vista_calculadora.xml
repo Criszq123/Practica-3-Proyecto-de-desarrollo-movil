@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#EEEEEE"
+        android:gravity="end"
+        android:padding="8dp"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <!-- Fila 1: Funciones especiales -->
+        <Button android:id="@+id/btnMc" android:text="MC" />
+        <Button android:id="@+id/btnMr" android:text="MR" />
+        <Button android:id="@+id/btnMPlus" android:text="M+" />
+        <Button android:id="@+id/btnMMinus" android:text="M-" />
+
+        <!-- Fila 2: Más funciones -->
+        <Button android:id="@+id/btnClear" android:text="C" />
+        <Button android:id="@+id/btnDelete" android:text="DEL" />
+        <Button android:id="@+id/btnSqrt" android:text="√" />
+        <Button android:id="@+id/btnporcentaje" android:text="%" />
+
+        <!-- Fila 3: Números 7, 8, 9 y división -->
+        <Button android:id="@+id/btn7" android:text="7" />
+        <Button android:id="@+id/btn8" android:text="8" />
+        <Button android:id="@+id/btn9" android:text="9" />
+        <Button android:id="@+id/btnDivide" android:text="/" />
+
+        <!-- Fila 4: Números 4, 5, 6 y multiplicación -->
+        <Button android:id="@+id/btn4" android:text="4" />
+        <Button android:id="@+id/btn5" android:text="5" />
+        <Button android:id="@+id/btn6" android:text="6" />
+        <Button android:id="@+id/btnMultiply" android:text="*" />
+
+        <!-- Fila 5: Números 1, 2, 3 y resta -->
+        <Button android:id="@+id/btn1" android:text="1" />
+        <Button android:id="@+id/btn2" android:text="2" />
+        <Button android:id="@+id/btn3" android:text="3" />
+        <Button android:id="@+id/btnSubtract" android:text="-" />
+
+        <!-- Fila 6: 0, punto decimal, suma y resultado -->
+        <Button android:id="@+id/btn0" android:layout_columnSpan="2" android:text="0" />
+        <Button android:id="@+id/btnDecimal" android:text="." />
+        <Button android:id="@+id/btnAdd" android:text="+" />
+        <Button android:id="@+id/btnEquals" android:text="=" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnpow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exponente" />
+</LinearLayout>
